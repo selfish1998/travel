@@ -36,9 +36,9 @@ export default {
     .header-input
       flex 1
       background #fff
-      height .64rem
+      height .62rem
       padding-left .2rem
-      line-height .64rem
+      line-height .62rem
       margin-top .12rem
       margin-left .2rem
       border-radius .1rem
