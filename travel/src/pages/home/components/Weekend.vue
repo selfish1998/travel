@@ -2,7 +2,7 @@
   <div>
     <div class="title">周末去哪儿</div>
     <ul>
-      <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item of list" :key="item.id">
         <div class="item-img-warpper">
           <img class="item-img" :src="item.imgUrl" :alt="item.title">
         </div>
@@ -17,6 +17,9 @@
 <script>
 export default {
   name: 'HomeWeekend',
+  props: {
+    list: Array
+  },
   data () {
     return {
       recommendList: [
@@ -48,12 +51,11 @@ export default {
   .title
     line-height .7rem
     text-indent .2rem
-    margin-top .2rem
     background-color #ccc
   .item-img-warpper
     overflow hidden
     height 0
-    padding-bottom 37.8092%
+    padding-bottom 38.0107%
     .item-img
       width 100%
   .item-info
