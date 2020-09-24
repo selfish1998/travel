@@ -37,7 +37,7 @@ export default {
     letter: String
   },
   updated () {
-    this.scroll = new Bscroll(this.$refs.warpper)
+    this.scroll = new Bscroll(this.$refs.warpper, { click: true })
   },
   watch: {
     letter () {
